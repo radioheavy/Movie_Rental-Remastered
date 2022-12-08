@@ -7,10 +7,13 @@ using System.Threading.Tasks;
 
 namespace Project.MAP.Options
 {
-    public class CategoryMap : BaseMap<Category>
+    public class TagMap : BaseMap<Tag>
     {
-        public CategoryMap()
+        public TagMap()
         {
+
+            ToTable("Etiketler");
+            Property(x => x.TagName).HasColumnName("Afis");
 
         }
     }

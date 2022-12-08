@@ -9,7 +9,7 @@ namespace Project.ENTITIES.Models
     public class Shipper : BaseEntity
     {
         public string ShipperName { get; set; }
-        public string Phone { get; set; }
+        public string ShipperPhone { get; set; }
 
         //Relational Properties
 

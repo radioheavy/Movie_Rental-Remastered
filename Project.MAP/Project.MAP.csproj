@@ -53,23 +53,23 @@
   <ItemGroup>
     <Compile Include="Options\AppUserMap.cs" />
     <Compile Include="Options\AppUserProfileMap.cs" />
-    <Compile Include="Options\AwardMap.cs" />
+    <Compile Include="Options\MovieOption\AwardMap.cs" />
     <Compile Include="Options\BaseMap.cs" />
-    <Compile Include="Options\ActorMap.cs" />
-    <Compile Include="Options\CategoryMap.cs" />
-    <Compile Include="Options\DirectorMap.cs" />
-    <Compile Include="Options\MovieActorMap.cs" />
-    <Compile Include="Options\MovieAwardMap.cs" />
-    <Compile Include="Options\MovieCategoryMap.cs" />
-    <Compile Include="Options\MovieDirectorMap.cs" />
+    <Compile Include="Options\MovieOption\ActorMap.cs" />
+    <Compile Include="Options\MovieOption\CategoryMap.cs" />
+    <Compile Include="Options\MovieOption\DirectorMap.cs" />
+    <Compile Include="Options\MovieOption\RelationalMap\MovieActorMap.cs" />
+    <Compile Include="Options\MovieOption\RelationalMap\MovieAwardMap.cs" />
+    <Compile Include="Options\MovieOption\RelationalMap\MovieCategoryMap.cs" />
+    <Compile Include="Options\MovieOption\RelationalMap\MovieDirectorMap.cs" />
     <Compile Include="Options\MovieMap.cs" />
-    <Compile Include="Options\MovieScenaristMap.cs" />
-    <Compile Include="Options\MovieTagMap.cs" />
+    <Compile Include="Options\MovieOption\RelationalMap\MovieScenaristMap.cs" />
+    <Compile Include="Options\MovieOption\RelationalMap\MovieTagMap.cs" />
     <Compile Include="Options\OrderDetailMap.cs" />
     <Compile Include="Options\OrderMap.cs" />
-    <Compile Include="Options\ScenaristMap.cs" />
+    <Compile Include="Options\MovieOption\ScenaristMap.cs" />
     <Compile Include="Options\ShipperMap.cs" />
-    <Compile Include="Options\TagMap.cs" />
+    <Compile Include="Options\MovieOption\TagMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

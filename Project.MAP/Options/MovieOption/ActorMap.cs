@@ -12,7 +12,9 @@ namespace Project.MAP.Options
     {
         public ActorMap()
         {
-
+            ToTable("Oyuncular");
+            Property(x => x.FirstName).HasColumnName("Oyuncu Ismi");
+            Property(x => x.LastName).HasColumnName("Oyuncu SoyIsmi");
         }
     }
 }

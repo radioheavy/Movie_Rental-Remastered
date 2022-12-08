@@ -8,7 +8,7 @@ namespace Project.ENTITIES.Models
 {
     public class Order : BaseEntity
     {
-        public string ShipperdAddress { get; set; }
+        public string ShipperAddress { get; set; }
         public decimal TotalPrice { get; set; }
         public string UserName { get; set; }
         public string Email { get; set; }

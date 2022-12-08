@@ -13,7 +13,9 @@ namespace Project.MAP.Options
     {
         public ShipperMap()
         {
-
+            ToTable("Kuryeler");
+            Property(x => x.ShipperName).HasColumnName("Kurye Adi");
+            Property(x => x.ShipperPhone).HasColumnName("Kurye Numarası");
         }
     }
 }

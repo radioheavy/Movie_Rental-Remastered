@@ -11,7 +11,16 @@ namespace Project.MAP.Options
     {
         public MovieTagMap()
         {
+            ToTable("Filmlerin Etiketleri");
 
+            //Coka cok ilişkinin tamamlanması
+
+            Ignore(x => x.ID);
+            HasKey(x => new
+            {
+                x.TagID,
+                x.MovieID
+            });
         }
     }
 }

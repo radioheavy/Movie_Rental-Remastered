@@ -11,7 +11,9 @@ namespace Project.MAP.Options
     {
         public DirectorMap()
         {
-
+            ToTable("Yönetmenler");
+            Property(x => x.FirstName).HasColumnName("Yonetmen Adi");
+            Property(x => x.LastName).HasColumnName("Yonetmen Soyadi");
         }
     }
 }

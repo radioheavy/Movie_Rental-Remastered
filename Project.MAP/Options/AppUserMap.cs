@@ -13,6 +13,17 @@ namespace Project.MAP.Options
     {
         public AppUserMap()
         {
+            ToTable("Kullanicilar");
+            Property(x => x.UserName).HasColumnName("Kullanici Adi");
+            Property(x => x.Password).HasColumnName("Sifre");
+            Property(x => x.Email).HasColumnName("Mail Adresi");
+            Property(x => x.Role).HasColumnName("Kullanıcı Rolü");
+            Property(x => x.ActivationCode).HasColumnName("Aktivasyon Kodu");
+            Property(x => x.Active).HasColumnName("Aktiflik Durumu");
+
+
+            //birebir ilişkinin tamamlanması
+
             HasOptional(x => x.Profile).WithRequired(x => x.AppUser);
         }
     }

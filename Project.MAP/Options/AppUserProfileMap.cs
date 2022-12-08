@@ -13,6 +13,15 @@ namespace Project.MAP.Options
     {
         public AppUserProfileMap()
         {
+            ToTable("Profiller");
+            Property(x => x.Adress).HasColumnName("Kullanıcı Rolü");
+            Property(x => x.CreditCardNo).HasColumnName("Kullanıcı Rolü");
+            Property(x => x.CVV).HasColumnName("Kullanıcı Rolü");
+            Property(x => x.ExpiryDay).HasColumnName("Kullanıcı Rolü");
+            Property(x => x.ExpiryMount).HasColumnName("Kullanıcı Rolü");
+            Property(x => x.ExpiryYear).HasColumnName("Kullanıcı Rolü");
+            Property(x => x.PhoneNo).HasColumnName("Kullanıcı Rolü");
+            Property(x => x.SubscriptionType).HasColumnName("Kullanıcı Rolü");
 
         }
     }

@@ -13,6 +13,9 @@ namespace Project.MAP.Options
     {
         public OrderMap()
         {
+            ToTable("Siparisler");
+            Property(x => x.ShipperAddress).HasColumnName("Kullanıcı Rolü");
+            Property(x => x.TotalPrice).HasColumnName("Toplam Ücret");
 
         }
     }

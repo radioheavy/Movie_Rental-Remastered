@@ -13,6 +13,10 @@ namespace Project.MAP.Options
     {
         public OrderDetailMap()
         {
+            ToTable("Satislar");
+            Property(x => x.TotalPrice).HasColumnName("Toplam Tutar");
+            Property(x => x.Quantity).HasColumnName("Adet");
+
             Ignore(x => x.ID);
             HasKey(x => new
             {

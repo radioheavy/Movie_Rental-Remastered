@@ -11,7 +11,9 @@ namespace Project.MAP.Options
     {
         public ScenaristMap()
         {
-
+            ToTable("Senaristler");
+            Property(x => x.FirstName).HasColumnName("Senarist Adi");
+            Property(x => x.LastName).HasColumnName("Senarist Soyadi");
         }
     }
 }

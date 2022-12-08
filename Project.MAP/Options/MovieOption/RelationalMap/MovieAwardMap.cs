@@ -11,7 +11,16 @@ namespace Project.MAP.Options
     {
         public MovieAwardMap()
         {
+            ToTable("Filmlerin Ödülleri");
 
+            //Coka cok ilişkinin tamamlanması
+
+            Ignore(x => x.ID);
+            HasKey(x => new
+            {
+                x.AwardID,
+                x.MovieID
+            });
         }
     }
 }

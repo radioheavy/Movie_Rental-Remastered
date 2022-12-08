@@ -11,7 +11,9 @@ namespace Project.MAP.Options
     {
         public AwardMap()
         {
-
+            ToTable("Ödüller");
+            Property(x => x.AwardName).HasColumnName("Odul Adi");
+            Property(x => x.AwardDate).HasColumnName("Odul Tarihi");
         }
     }
 }

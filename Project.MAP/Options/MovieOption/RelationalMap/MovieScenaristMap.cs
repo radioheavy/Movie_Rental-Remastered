@@ -11,7 +11,16 @@ namespace Project.MAP.Options
     {
         public MovieScenaristMap()
         {
+            ToTable("Senaristlerin Filmleri");
 
+            //Coka cok ilişkinin tamamlanması
+
+            Ignore(x => x.ID);
+            HasKey(x => new
+            {
+                x.ScenaristID,
+                x.MovieID
+            });
         }
     }
 }

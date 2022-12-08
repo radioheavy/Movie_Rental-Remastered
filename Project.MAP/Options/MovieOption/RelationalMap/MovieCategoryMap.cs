@@ -11,7 +11,16 @@ namespace Project.MAP.Options
     {
         public MovieCategoryMap()
         {
+            ToTable("Filmlerin Kategorileri");
 
+            //Coka cok ilişkinin tamamlanması
+
+            Ignore(x => x.ID);
+            HasKey(x => new
+            {
+                x.CategoryID,
+                x.MovieID
+            });
         }
     }
 }
