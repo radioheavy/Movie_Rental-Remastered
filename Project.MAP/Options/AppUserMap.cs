@@ -17,9 +17,9 @@ namespace Project.MAP.Options
             Property(x => x.UserName).HasColumnName("Kullanici Adi");
             Property(x => x.Password).HasColumnName("Sifre");
             Property(x => x.Email).HasColumnName("Mail Adresi");
-            Property(x => x.Role).HasColumnName("Kullanıcı Rolü");
             Property(x => x.ActivationCode).HasColumnName("Aktivasyon Kodu");
             Property(x => x.Active).HasColumnName("Aktiflik Durumu");
+            Property(x => x.Role).HasColumnName("Kullanici Rolü");
 
 
             //birebir ilişkinin tamamlanması

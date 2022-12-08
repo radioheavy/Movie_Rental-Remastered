@@ -25,7 +25,7 @@ namespace Project.MAP.Options
             Property(x => x.UnitsInStock).HasColumnName("Stok Durumu");
             Property(x => x.UnitPrice).HasColumnName("Fiyati").HasColumnType("money");
             Property(x => x.ImagePath).HasColumnName("Afis");
-            Property(x => x.VideoPath).HasColumnName("Fragman");
+            Property(x => x.VideoPath).HasColumnName("VideoYolu");
 
 
         }
